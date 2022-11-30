@@ -59,7 +59,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="phone_book_dataset.Designer.cs">
+    <Compile Include="Data_set\phone_book_dataset.cs">
+      <DependentUpon>phone_book_dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data_set\phone_book_dataset.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>phone_book_dataset.xsd</DependentUpon>
@@ -79,15 +82,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="app.config" />
-    <None Include="phone_book_dataset.xsc">
+    <None Include="Data_set\phone_book_dataset.xsc">
       <DependentUpon>phone_book_dataset.xsd</DependentUpon>
     </None>
-    <None Include="phone_book_dataset.xsd">
+    <None Include="Data_set\phone_book_dataset.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>phone_book_dataset.Designer.cs</LastGenOutput>
     </None>
-    <None Include="phone_book_dataset.xss">
+    <None Include="Data_set\phone_book_dataset.xss">
       <DependentUpon>phone_book_dataset.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">

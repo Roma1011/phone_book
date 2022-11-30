@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace mysql_phone_book {
+namespace mysql_phone_book.Data_set {
     
     
     /// <summary>
@@ -1022,7 +1022,7 @@ namespace mysql_phone_book {
         }
     }
 }
-namespace mysql_phone_book.phone_book_datasetTableAdapters {
+namespace mysql_phone_book.Data_set.phone_book_datasetTableAdapters {
     
     
     /// <summary>
