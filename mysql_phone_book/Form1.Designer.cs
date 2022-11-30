@@ -45,8 +45,6 @@ namespace mysql_phone_book
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.cosutmer_listBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
 			this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-			this.cosutmer_listBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.phone_book_dataset = new mysql_phone_book.Data_set.phone_book_dataset();
 			this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
 			this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -62,19 +60,6 @@ namespace mysql_phone_book
 			this.cosutmer_listBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
 			this.cosutmer_listDataGridView = new System.Windows.Forms.DataGridView();
-			this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.cosutmer_listTableAdapter = new mysql_phone_book.Data_set.phone_book_datasetTableAdapters.cosutmer_listTableAdapter();
-			this.tableAdapterManager = new mysql_phone_book.Data_set.phone_book_datasetTableAdapters.TableAdapterManager();
 			this.idTextBox = new System.Windows.Forms.TextBox();
 			this.first_nameTextBox = new System.Windows.Forms.TextBox();
 			this.last_nameTextBox = new System.Windows.Forms.TextBox();
@@ -99,6 +84,21 @@ namespace mysql_phone_book
 			this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
 			this.Cancel_button_up = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
+			this.cosutmer_listBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.phone_book_dataset = new mysql_phone_book.Data_set.phone_book_dataset();
+			this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.cosutmer_listTableAdapter = new mysql_phone_book.Data_set.phone_book_datasetTableAdapters.cosutmer_listTableAdapter();
+			this.tableAdapterManager = new mysql_phone_book.Data_set.phone_book_datasetTableAdapters.TableAdapterManager();
 			idLabel = new System.Windows.Forms.Label();
 			first_nameLabel = new System.Windows.Forms.Label();
 			last_nameLabel = new System.Windows.Forms.Label();
@@ -113,11 +113,11 @@ namespace mysql_phone_book
 			commentLabel1 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.cosutmer_listBindingNavigator)).BeginInit();
 			this.cosutmer_listBindingNavigator.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.cosutmer_listBindingSource)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.phone_book_dataset)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.cosutmer_listDataGridView)).BeginInit();
 			this.groupBox1.SuspendLayout();
 			this.toolStrip1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.cosutmer_listBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.phone_book_dataset)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// idLabel
@@ -274,16 +274,6 @@ namespace mysql_phone_book
 			this.bindingNavigatorAddNewItem.Text = "Add new F2";
 			this.bindingNavigatorAddNewItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			// 
-			// cosutmer_listBindingSource
-			// 
-			this.cosutmer_listBindingSource.DataMember = "cosutmer_list";
-			this.cosutmer_listBindingSource.DataSource = this.phone_book_dataset;
-			// 
-			// phone_book_dataset
-			// 
-			this.phone_book_dataset.DataSetName = "phone_book_dataset";
-			this.phone_book_dataset.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-			// 
 			// bindingNavigatorCountItem
 			// 
 			this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
@@ -328,7 +318,6 @@ namespace mysql_phone_book
 			// 
 			this.bindingNavigatorPositionItem.AccessibleName = "Position";
 			this.bindingNavigatorPositionItem.AutoSize = false;
-			this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
 			this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
 			this.bindingNavigatorPositionItem.Text = "0";
@@ -389,6 +378,8 @@ namespace mysql_phone_book
 			// 
 			// cosutmer_listDataGridView
 			// 
+			this.cosutmer_listDataGridView.AllowUserToAddRows = false;
+			this.cosutmer_listDataGridView.AllowUserToDeleteRows = false;
 			this.cosutmer_listDataGridView.AutoGenerateColumns = false;
 			this.cosutmer_listDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.cosutmer_listDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -406,90 +397,17 @@ namespace mysql_phone_book
 			this.cosutmer_listDataGridView.DataSource = this.cosutmer_listBindingSource;
 			this.cosutmer_listDataGridView.Location = new System.Drawing.Point(9, 377);
 			this.cosutmer_listDataGridView.Name = "cosutmer_listDataGridView";
+			this.cosutmer_listDataGridView.ReadOnly = true;
 			this.cosutmer_listDataGridView.Size = new System.Drawing.Size(795, 195);
 			this.cosutmer_listDataGridView.TabIndex = 1;
 			// 
-			// dataGridViewTextBoxColumn1
-			// 
-			this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
-			this.dataGridViewTextBoxColumn1.HeaderText = "id";
-			this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-			// 
-			// dataGridViewTextBoxColumn2
-			// 
-			this.dataGridViewTextBoxColumn2.DataPropertyName = "first_name";
-			this.dataGridViewTextBoxColumn2.HeaderText = "first_name";
-			this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-			// 
-			// dataGridViewTextBoxColumn3
-			// 
-			this.dataGridViewTextBoxColumn3.DataPropertyName = "last_name";
-			this.dataGridViewTextBoxColumn3.HeaderText = "last_name";
-			this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-			// 
-			// dataGridViewTextBoxColumn4
-			// 
-			this.dataGridViewTextBoxColumn4.DataPropertyName = "age";
-			this.dataGridViewTextBoxColumn4.HeaderText = "age";
-			this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-			// 
-			// dataGridViewTextBoxColumn5
-			// 
-			this.dataGridViewTextBoxColumn5.DataPropertyName = "date_of_birth";
-			this.dataGridViewTextBoxColumn5.HeaderText = "date_of_birth";
-			this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-			// 
-			// dataGridViewTextBoxColumn6
-			// 
-			this.dataGridViewTextBoxColumn6.DataPropertyName = "debit";
-			this.dataGridViewTextBoxColumn6.HeaderText = "debit";
-			this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-			// 
-			// dataGridViewTextBoxColumn7
-			// 
-			this.dataGridViewTextBoxColumn7.DataPropertyName = "call_number";
-			this.dataGridViewTextBoxColumn7.HeaderText = "call_number";
-			this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-			// 
-			// dataGridViewTextBoxColumn8
-			// 
-			this.dataGridViewTextBoxColumn8.DataPropertyName = "land_line";
-			this.dataGridViewTextBoxColumn8.HeaderText = "land_line";
-			this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-			// 
-			// dataGridViewTextBoxColumn9
-			// 
-			this.dataGridViewTextBoxColumn9.DataPropertyName = "email";
-			this.dataGridViewTextBoxColumn9.HeaderText = "email";
-			this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-			// 
-			// dataGridViewTextBoxColumn10
-			// 
-			this.dataGridViewTextBoxColumn10.DataPropertyName = "addres";
-			this.dataGridViewTextBoxColumn10.HeaderText = "addres";
-			this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-			// 
-			// dataGridViewTextBoxColumn11
-			// 
-			this.dataGridViewTextBoxColumn11.DataPropertyName = "comment";
-			this.dataGridViewTextBoxColumn11.HeaderText = "comment";
-			this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-			// 
-			// cosutmer_listTableAdapter
-			// 
-			this.cosutmer_listTableAdapter.ClearBeforeFill = true;
-			// 
-			// tableAdapterManager
-			// 
-			this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-			this.tableAdapterManager.cosutmer_listTableAdapter = this.cosutmer_listTableAdapter;
-			this.tableAdapterManager.UpdateOrder = mysql_phone_book.Data_set.phone_book_datasetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-			// 
 			// idTextBox
 			// 
+			this.idTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
 			this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cosutmer_listBindingSource, "id", true));
 			this.idTextBox.Location = new System.Drawing.Point(297, 11);
 			this.idTextBox.Name = "idTextBox";
+			this.idTextBox.ReadOnly = true;
 			this.idTextBox.Size = new System.Drawing.Size(187, 21);
 			this.idTextBox.TabIndex = 3;
 			// 
@@ -706,6 +624,103 @@ namespace mysql_phone_book
 			this.toolStripSeparator8.Name = "toolStripSeparator8";
 			this.toolStripSeparator8.Size = new System.Drawing.Size(6, 47);
 			// 
+			// cosutmer_listBindingSource
+			// 
+			this.cosutmer_listBindingSource.DataMember = "cosutmer_list";
+			this.cosutmer_listBindingSource.DataSource = this.phone_book_dataset;
+			// 
+			// phone_book_dataset
+			// 
+			this.phone_book_dataset.DataSetName = "phone_book_dataset";
+			this.phone_book_dataset.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+			// 
+			// dataGridViewTextBoxColumn1
+			// 
+			this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
+			this.dataGridViewTextBoxColumn1.HeaderText = "id";
+			this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+			this.dataGridViewTextBoxColumn1.ReadOnly = true;
+			// 
+			// dataGridViewTextBoxColumn2
+			// 
+			this.dataGridViewTextBoxColumn2.DataPropertyName = "first_name";
+			this.dataGridViewTextBoxColumn2.HeaderText = "first_name";
+			this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+			this.dataGridViewTextBoxColumn2.ReadOnly = true;
+			// 
+			// dataGridViewTextBoxColumn3
+			// 
+			this.dataGridViewTextBoxColumn3.DataPropertyName = "last_name";
+			this.dataGridViewTextBoxColumn3.HeaderText = "last_name";
+			this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+			this.dataGridViewTextBoxColumn3.ReadOnly = true;
+			// 
+			// dataGridViewTextBoxColumn4
+			// 
+			this.dataGridViewTextBoxColumn4.DataPropertyName = "age";
+			this.dataGridViewTextBoxColumn4.HeaderText = "age";
+			this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+			this.dataGridViewTextBoxColumn4.ReadOnly = true;
+			// 
+			// dataGridViewTextBoxColumn5
+			// 
+			this.dataGridViewTextBoxColumn5.DataPropertyName = "date_of_birth";
+			this.dataGridViewTextBoxColumn5.HeaderText = "date_of_birth";
+			this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+			this.dataGridViewTextBoxColumn5.ReadOnly = true;
+			// 
+			// dataGridViewTextBoxColumn6
+			// 
+			this.dataGridViewTextBoxColumn6.DataPropertyName = "debit";
+			this.dataGridViewTextBoxColumn6.HeaderText = "debit";
+			this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+			this.dataGridViewTextBoxColumn6.ReadOnly = true;
+			// 
+			// dataGridViewTextBoxColumn7
+			// 
+			this.dataGridViewTextBoxColumn7.DataPropertyName = "call_number";
+			this.dataGridViewTextBoxColumn7.HeaderText = "call_number";
+			this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+			this.dataGridViewTextBoxColumn7.ReadOnly = true;
+			// 
+			// dataGridViewTextBoxColumn8
+			// 
+			this.dataGridViewTextBoxColumn8.DataPropertyName = "land_line";
+			this.dataGridViewTextBoxColumn8.HeaderText = "land_line";
+			this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+			this.dataGridViewTextBoxColumn8.ReadOnly = true;
+			// 
+			// dataGridViewTextBoxColumn9
+			// 
+			this.dataGridViewTextBoxColumn9.DataPropertyName = "email";
+			this.dataGridViewTextBoxColumn9.HeaderText = "email";
+			this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+			this.dataGridViewTextBoxColumn9.ReadOnly = true;
+			// 
+			// dataGridViewTextBoxColumn10
+			// 
+			this.dataGridViewTextBoxColumn10.DataPropertyName = "addres";
+			this.dataGridViewTextBoxColumn10.HeaderText = "addres";
+			this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+			this.dataGridViewTextBoxColumn10.ReadOnly = true;
+			// 
+			// dataGridViewTextBoxColumn11
+			// 
+			this.dataGridViewTextBoxColumn11.DataPropertyName = "comment";
+			this.dataGridViewTextBoxColumn11.HeaderText = "comment";
+			this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+			this.dataGridViewTextBoxColumn11.ReadOnly = true;
+			// 
+			// cosutmer_listTableAdapter
+			// 
+			this.cosutmer_listTableAdapter.ClearBeforeFill = true;
+			// 
+			// tableAdapterManager
+			// 
+			this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+			this.tableAdapterManager.cosutmer_listTableAdapter = this.cosutmer_listTableAdapter;
+			this.tableAdapterManager.UpdateOrder = mysql_phone_book.Data_set.phone_book_datasetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -727,13 +742,13 @@ namespace mysql_phone_book
 			((System.ComponentModel.ISupportInitialize)(this.cosutmer_listBindingNavigator)).EndInit();
 			this.cosutmer_listBindingNavigator.ResumeLayout(false);
 			this.cosutmer_listBindingNavigator.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.cosutmer_listBindingSource)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.phone_book_dataset)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.cosutmer_listDataGridView)).EndInit();
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			this.toolStrip1.ResumeLayout(false);
 			this.toolStrip1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.cosutmer_listBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.phone_book_dataset)).EndInit();
 			this.ResumeLayout(false);
 
 		}

@@ -81,6 +81,15 @@ namespace mysql_phone_book
 		private void Save_button_up_Click(object sender, EventArgs e)
 		{
 			save_cancel_butt();
+			//----------------------------------
+			this.cosutmer_listBindingSource.EndEdit();
+			Int32 r=this.cosutmer_listTableAdapter.Update(this.phone_book_dataset.cosutmer_list);
+			if (r > 0)
+			{
+				MessageBox.Show("Saved!");
+			}
+			else
+				MessageBox.Show("Nothing Saved!");
 		}
 		private void Edit_button_up_Click(object sender, EventArgs e)
 		{
@@ -95,7 +104,6 @@ namespace mysql_phone_book
 		private void Cancel_button_up_Click(object sender, EventArgs e)
 		{
 			save_cancel_butt();
-
 		}
 	}
 }
