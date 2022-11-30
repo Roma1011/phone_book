@@ -59,5 +59,55 @@ namespace mysql_phone_book.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1646001_add_create_new_plus_icon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("_1646001_add_create_new_plus_icon__1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _285657_floppy_guardar_save_icon {
+            get {
+                object obj = ResourceManager.GetObject("_285657_floppy_guardar_save_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3855617_edit_pencil_write_mode_icon {
+            get {
+                object obj = ResourceManager.GetObject("_3855617_edit_pencil_write_mode_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3909341_cancel_delete_document_file_files_icon {
+            get {
+                object obj = ResourceManager.GetObject("_3909341_cancel_delete_document_file_files_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _9004715_cross_delete_remove_cancel_icon {
+            get {
+                object obj = ResourceManager.GetObject("_9004715_cross_delete_remove_cancel_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

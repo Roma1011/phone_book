@@ -107,5 +107,20 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9004715_cross_delete_remove_cancel_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3855617_edit_pencil_write mode_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1646001_add_create_new_plus_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3909341_cancel_delete_document_file_files_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\285657_floppy_guardar_save_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
