@@ -1342,9 +1342,10 @@ namespace mysql_phone_book.Data_set.phone_book_datasetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(param);
             this._adapter.InsertCommand = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO `cosutmer_list` (`first_name`, `last_name`, `age`, `date_of_birth`, `" +
-                "debit`, `call_number`, `land_line`, `email`, `addres`, `comment`) VALUES (@p1, @" +
-                "p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO cosutmer_list
+                         (first_name, last_name, age, date_of_birth, debit, call_number, land_line, email, addres, comment)
+VALUES        (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+SELECT last_insert_id() as 'id' FROM cosutmer_list;";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p1";
