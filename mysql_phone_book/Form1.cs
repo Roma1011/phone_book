@@ -99,11 +99,18 @@ namespace mysql_phone_book
 		private void Delete_button_up_Click(object sender, EventArgs e)
 		{
 			new_edit_del_butt();
+			//----------------delete record---------------
+			this.cosutmer_listBindingSource.RemoveCurrent();
+			//--------------------------------------------
 		}
 
 		private void Cancel_button_up_Click(object sender, EventArgs e)
 		{
 			save_cancel_butt();
+			//------------cancel changes---------
+			this.phone_book_dataset.cosutmer_list.RejectChanges();
+			this.cosutmer_listBindingSource.CancelEdit();
+			//-----------------------------------
 		}
 	}
 }
