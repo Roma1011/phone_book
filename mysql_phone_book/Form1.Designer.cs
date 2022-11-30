@@ -42,6 +42,7 @@ namespace mysql_phone_book
 			System.Windows.Forms.Label emailLabel;
 			System.Windows.Forms.Label addresLabel;
 			System.Windows.Forms.Label commentLabel;
+			System.Windows.Forms.Label commentLabel1;
 			this.cosutmer_listBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
 			this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -83,6 +84,21 @@ namespace mysql_phone_book
 			this.addresTextBox = new System.Windows.Forms.TextBox();
 			this.commentTextBox = new System.Windows.Forms.TextBox();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+			this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+			this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+			this.commentTextBox1 = new System.Windows.Forms.TextBox();
+			this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+			this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+			this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+			this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+			this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+			this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+			this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+			this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+			this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+			this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
+			this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
 			idLabel = new System.Windows.Forms.Label();
 			first_nameLabel = new System.Windows.Forms.Label();
 			last_nameLabel = new System.Windows.Forms.Label();
@@ -94,20 +110,24 @@ namespace mysql_phone_book
 			emailLabel = new System.Windows.Forms.Label();
 			addresLabel = new System.Windows.Forms.Label();
 			commentLabel = new System.Windows.Forms.Label();
+			commentLabel1 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.cosutmer_listBindingNavigator)).BeginInit();
 			this.cosutmer_listBindingNavigator.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.cosutmer_listDataGridView)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.cosutmer_listBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.phone_book_dataset)).BeginInit();
 			this.groupBox1.SuspendLayout();
+			this.toolStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// cosutmer_listBindingNavigator
 			// 
 			this.cosutmer_listBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+			this.cosutmer_listBindingNavigator.AutoSize = false;
 			this.cosutmer_listBindingNavigator.BindingSource = this.cosutmer_listBindingSource;
 			this.cosutmer_listBindingNavigator.CountItem = this.bindingNavigatorCountItem;
 			this.cosutmer_listBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+			this.cosutmer_listBindingNavigator.Dock = System.Windows.Forms.DockStyle.Bottom;
 			this.cosutmer_listBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -119,43 +139,48 @@ namespace mysql_phone_book
             this.bindingNavigatorMoveLastItem,
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
+            this.toolStripSeparator2,
             this.bindingNavigatorDeleteItem,
-            this.cosutmer_listBindingNavigatorSaveItem});
-			this.cosutmer_listBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.toolStripSeparator1,
+            this.cosutmer_listBindingNavigatorSaveItem,
+            this.toolStripSeparator3});
+			this.cosutmer_listBindingNavigator.Location = new System.Drawing.Point(0, 575);
 			this.cosutmer_listBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
 			this.cosutmer_listBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
 			this.cosutmer_listBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
 			this.cosutmer_listBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
 			this.cosutmer_listBindingNavigator.Name = "cosutmer_listBindingNavigator";
 			this.cosutmer_listBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-			this.cosutmer_listBindingNavigator.Size = new System.Drawing.Size(816, 25);
+			this.cosutmer_listBindingNavigator.Size = new System.Drawing.Size(816, 39);
 			this.cosutmer_listBindingNavigator.TabIndex = 0;
 			this.cosutmer_listBindingNavigator.Text = "bindingNavigator1";
 			// 
 			// bindingNavigatorAddNewItem
 			// 
-			this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+			this.bindingNavigatorAddNewItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
 			this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
 			this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-			this.bindingNavigatorAddNewItem.Text = "Add new";
+			this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(73, 36);
+			this.bindingNavigatorAddNewItem.Text = "Add new F2";
+			this.bindingNavigatorAddNewItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			// 
 			// bindingNavigatorCountItem
 			// 
 			this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-			this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+			this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 36);
 			this.bindingNavigatorCountItem.Text = "of {0}";
 			this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
 			// 
 			// bindingNavigatorDeleteItem
 			// 
-			this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+			this.bindingNavigatorDeleteItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
 			this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
 			this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-			this.bindingNavigatorDeleteItem.Text = "Delete";
+			this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(59, 36);
+			this.bindingNavigatorDeleteItem.Text = "Delete F3";
+			this.bindingNavigatorDeleteItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			// 
 			// bindingNavigatorMoveFirstItem
 			// 
@@ -163,7 +188,7 @@ namespace mysql_phone_book
 			this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
 			this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
 			this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+			this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 36);
 			this.bindingNavigatorMoveFirstItem.Text = "Move first";
 			// 
 			// bindingNavigatorMovePreviousItem
@@ -172,13 +197,13 @@ namespace mysql_phone_book
 			this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
 			this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
 			this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+			this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 36);
 			this.bindingNavigatorMovePreviousItem.Text = "Move previous";
 			// 
 			// bindingNavigatorSeparator
 			// 
 			this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-			this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+			this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 39);
 			// 
 			// bindingNavigatorPositionItem
 			// 
@@ -193,7 +218,7 @@ namespace mysql_phone_book
 			// bindingNavigatorSeparator1
 			// 
 			this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-			this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+			this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 39);
 			// 
 			// bindingNavigatorMoveNextItem
 			// 
@@ -201,7 +226,7 @@ namespace mysql_phone_book
 			this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
 			this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
 			this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+			this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 36);
 			this.bindingNavigatorMoveNextItem.Text = "Move next";
 			// 
 			// bindingNavigatorMoveLastItem
@@ -210,21 +235,22 @@ namespace mysql_phone_book
 			this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
 			this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
 			this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+			this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 36);
 			this.bindingNavigatorMoveLastItem.Text = "Move last";
 			// 
 			// bindingNavigatorSeparator2
 			// 
 			this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-			this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+			this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 39);
 			// 
 			// cosutmer_listBindingNavigatorSaveItem
 			// 
-			this.cosutmer_listBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.cosutmer_listBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("cosutmer_listBindingNavigatorSaveItem.Image")));
+			this.cosutmer_listBindingNavigatorSaveItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
 			this.cosutmer_listBindingNavigatorSaveItem.Name = "cosutmer_listBindingNavigatorSaveItem";
-			this.cosutmer_listBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
-			this.cosutmer_listBindingNavigatorSaveItem.Text = "Save Data";
+			this.cosutmer_listBindingNavigatorSaveItem.Size = new System.Drawing.Size(77, 36);
+			this.cosutmer_listBindingNavigatorSaveItem.Text = "Save Data F5";
+			this.cosutmer_listBindingNavigatorSaveItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			this.cosutmer_listBindingNavigatorSaveItem.Click += new System.EventHandler(this.cosutmer_listBindingNavigatorSaveItem_Click);
 			// 
 			// cosutmer_listDataGridView
@@ -244,7 +270,7 @@ namespace mysql_phone_book
             this.dataGridViewTextBoxColumn10,
             this.dataGridViewTextBoxColumn11});
 			this.cosutmer_listDataGridView.DataSource = this.cosutmer_listBindingSource;
-			this.cosutmer_listDataGridView.Location = new System.Drawing.Point(10, 424);
+			this.cosutmer_listDataGridView.Location = new System.Drawing.Point(9, 377);
 			this.cosutmer_listDataGridView.Name = "cosutmer_listDataGridView";
 			this.cosutmer_listDataGridView.Size = new System.Drawing.Size(795, 195);
 			this.cosutmer_listDataGridView.TabIndex = 1;
@@ -338,7 +364,7 @@ namespace mysql_phone_book
 			// idLabel
 			// 
 			idLabel.AutoSize = true;
-			idLabel.Location = new System.Drawing.Point(216, 65);
+			idLabel.Location = new System.Drawing.Point(216, 14);
 			idLabel.Name = "idLabel";
 			idLabel.Size = new System.Drawing.Size(20, 15);
 			idLabel.TabIndex = 2;
@@ -347,7 +373,7 @@ namespace mysql_phone_book
 			// idTextBox
 			// 
 			this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cosutmer_listBindingSource, "id", true));
-			this.idTextBox.Location = new System.Drawing.Point(297, 62);
+			this.idTextBox.Location = new System.Drawing.Point(297, 11);
 			this.idTextBox.Name = "idTextBox";
 			this.idTextBox.Size = new System.Drawing.Size(187, 21);
 			this.idTextBox.TabIndex = 3;
@@ -355,7 +381,7 @@ namespace mysql_phone_book
 			// first_nameLabel
 			// 
 			first_nameLabel.AutoSize = true;
-			first_nameLabel.Location = new System.Drawing.Point(216, 92);
+			first_nameLabel.Location = new System.Drawing.Point(216, 41);
 			first_nameLabel.Name = "first_nameLabel";
 			first_nameLabel.Size = new System.Drawing.Size(64, 15);
 			first_nameLabel.TabIndex = 4;
@@ -364,7 +390,7 @@ namespace mysql_phone_book
 			// first_nameTextBox
 			// 
 			this.first_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cosutmer_listBindingSource, "first_name", true));
-			this.first_nameTextBox.Location = new System.Drawing.Point(297, 89);
+			this.first_nameTextBox.Location = new System.Drawing.Point(297, 38);
 			this.first_nameTextBox.Name = "first_nameTextBox";
 			this.first_nameTextBox.Size = new System.Drawing.Size(187, 21);
 			this.first_nameTextBox.TabIndex = 5;
@@ -372,7 +398,7 @@ namespace mysql_phone_book
 			// last_nameLabel
 			// 
 			last_nameLabel.AutoSize = true;
-			last_nameLabel.Location = new System.Drawing.Point(216, 119);
+			last_nameLabel.Location = new System.Drawing.Point(216, 68);
 			last_nameLabel.Name = "last_nameLabel";
 			last_nameLabel.Size = new System.Drawing.Size(64, 15);
 			last_nameLabel.TabIndex = 6;
@@ -381,7 +407,7 @@ namespace mysql_phone_book
 			// last_nameTextBox
 			// 
 			this.last_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cosutmer_listBindingSource, "last_name", true));
-			this.last_nameTextBox.Location = new System.Drawing.Point(297, 116);
+			this.last_nameTextBox.Location = new System.Drawing.Point(297, 65);
 			this.last_nameTextBox.Name = "last_nameTextBox";
 			this.last_nameTextBox.Size = new System.Drawing.Size(187, 21);
 			this.last_nameTextBox.TabIndex = 7;
@@ -389,7 +415,7 @@ namespace mysql_phone_book
 			// ageLabel
 			// 
 			ageLabel.AutoSize = true;
-			ageLabel.Location = new System.Drawing.Point(216, 146);
+			ageLabel.Location = new System.Drawing.Point(216, 95);
 			ageLabel.Name = "ageLabel";
 			ageLabel.Size = new System.Drawing.Size(31, 15);
 			ageLabel.TabIndex = 8;
@@ -398,7 +424,7 @@ namespace mysql_phone_book
 			// ageTextBox
 			// 
 			this.ageTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cosutmer_listBindingSource, "age", true));
-			this.ageTextBox.Location = new System.Drawing.Point(297, 143);
+			this.ageTextBox.Location = new System.Drawing.Point(297, 92);
 			this.ageTextBox.Name = "ageTextBox";
 			this.ageTextBox.Size = new System.Drawing.Size(187, 21);
 			this.ageTextBox.TabIndex = 9;
@@ -406,7 +432,7 @@ namespace mysql_phone_book
 			// date_of_birthLabel
 			// 
 			date_of_birthLabel.AutoSize = true;
-			date_of_birthLabel.Location = new System.Drawing.Point(216, 173);
+			date_of_birthLabel.Location = new System.Drawing.Point(216, 122);
 			date_of_birthLabel.Name = "date_of_birthLabel";
 			date_of_birthLabel.Size = new System.Drawing.Size(74, 15);
 			date_of_birthLabel.TabIndex = 10;
@@ -415,7 +441,7 @@ namespace mysql_phone_book
 			// date_of_birthTextBox
 			// 
 			this.date_of_birthTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cosutmer_listBindingSource, "date_of_birth", true));
-			this.date_of_birthTextBox.Location = new System.Drawing.Point(297, 170);
+			this.date_of_birthTextBox.Location = new System.Drawing.Point(297, 119);
 			this.date_of_birthTextBox.Name = "date_of_birthTextBox";
 			this.date_of_birthTextBox.Size = new System.Drawing.Size(187, 21);
 			this.date_of_birthTextBox.TabIndex = 11;
@@ -423,7 +449,7 @@ namespace mysql_phone_book
 			// debitLabel
 			// 
 			debitLabel.AutoSize = true;
-			debitLabel.Location = new System.Drawing.Point(216, 200);
+			debitLabel.Location = new System.Drawing.Point(216, 149);
 			debitLabel.Name = "debitLabel";
 			debitLabel.Size = new System.Drawing.Size(37, 15);
 			debitLabel.TabIndex = 12;
@@ -432,7 +458,7 @@ namespace mysql_phone_book
 			// debitTextBox
 			// 
 			this.debitTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cosutmer_listBindingSource, "debit", true));
-			this.debitTextBox.Location = new System.Drawing.Point(297, 197);
+			this.debitTextBox.Location = new System.Drawing.Point(297, 146);
 			this.debitTextBox.Name = "debitTextBox";
 			this.debitTextBox.Size = new System.Drawing.Size(187, 21);
 			this.debitTextBox.TabIndex = 13;
@@ -440,7 +466,7 @@ namespace mysql_phone_book
 			// call_numberLabel
 			// 
 			call_numberLabel.AutoSize = true;
-			call_numberLabel.Location = new System.Drawing.Point(216, 227);
+			call_numberLabel.Location = new System.Drawing.Point(216, 176);
 			call_numberLabel.Name = "call_numberLabel";
 			call_numberLabel.Size = new System.Drawing.Size(75, 15);
 			call_numberLabel.TabIndex = 14;
@@ -449,7 +475,7 @@ namespace mysql_phone_book
 			// call_numberTextBox
 			// 
 			this.call_numberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cosutmer_listBindingSource, "call_number", true));
-			this.call_numberTextBox.Location = new System.Drawing.Point(297, 224);
+			this.call_numberTextBox.Location = new System.Drawing.Point(297, 173);
 			this.call_numberTextBox.Name = "call_numberTextBox";
 			this.call_numberTextBox.Size = new System.Drawing.Size(187, 21);
 			this.call_numberTextBox.TabIndex = 15;
@@ -457,7 +483,7 @@ namespace mysql_phone_book
 			// land_lineLabel
 			// 
 			land_lineLabel.AutoSize = true;
-			land_lineLabel.Location = new System.Drawing.Point(216, 254);
+			land_lineLabel.Location = new System.Drawing.Point(216, 203);
 			land_lineLabel.Name = "land_lineLabel";
 			land_lineLabel.Size = new System.Drawing.Size(57, 15);
 			land_lineLabel.TabIndex = 16;
@@ -466,7 +492,7 @@ namespace mysql_phone_book
 			// land_lineTextBox
 			// 
 			this.land_lineTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cosutmer_listBindingSource, "land_line", true));
-			this.land_lineTextBox.Location = new System.Drawing.Point(297, 251);
+			this.land_lineTextBox.Location = new System.Drawing.Point(297, 200);
 			this.land_lineTextBox.Name = "land_lineTextBox";
 			this.land_lineTextBox.Size = new System.Drawing.Size(187, 21);
 			this.land_lineTextBox.TabIndex = 17;
@@ -474,7 +500,7 @@ namespace mysql_phone_book
 			// emailLabel
 			// 
 			emailLabel.AutoSize = true;
-			emailLabel.Location = new System.Drawing.Point(216, 281);
+			emailLabel.Location = new System.Drawing.Point(216, 230);
 			emailLabel.Name = "emailLabel";
 			emailLabel.Size = new System.Drawing.Size(41, 15);
 			emailLabel.TabIndex = 18;
@@ -483,7 +509,7 @@ namespace mysql_phone_book
 			// emailTextBox
 			// 
 			this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cosutmer_listBindingSource, "email", true));
-			this.emailTextBox.Location = new System.Drawing.Point(297, 278);
+			this.emailTextBox.Location = new System.Drawing.Point(297, 227);
 			this.emailTextBox.Name = "emailTextBox";
 			this.emailTextBox.Size = new System.Drawing.Size(187, 21);
 			this.emailTextBox.TabIndex = 19;
@@ -491,7 +517,7 @@ namespace mysql_phone_book
 			// addresLabel
 			// 
 			addresLabel.AutoSize = true;
-			addresLabel.Location = new System.Drawing.Point(216, 308);
+			addresLabel.Location = new System.Drawing.Point(216, 257);
 			addresLabel.Name = "addresLabel";
 			addresLabel.Size = new System.Drawing.Size(48, 15);
 			addresLabel.TabIndex = 20;
@@ -500,7 +526,7 @@ namespace mysql_phone_book
 			// addresTextBox
 			// 
 			this.addresTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cosutmer_listBindingSource, "addres", true));
-			this.addresTextBox.Location = new System.Drawing.Point(297, 305);
+			this.addresTextBox.Location = new System.Drawing.Point(297, 254);
 			this.addresTextBox.Name = "addresTextBox";
 			this.addresTextBox.Size = new System.Drawing.Size(187, 21);
 			this.addresTextBox.TabIndex = 21;
@@ -524,6 +550,8 @@ namespace mysql_phone_book
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(commentLabel1);
+			this.groupBox1.Controls.Add(this.commentTextBox1);
 			this.groupBox1.Controls.Add(this.first_nameTextBox);
 			this.groupBox1.Controls.Add(idLabel);
 			this.groupBox1.Controls.Add(this.commentTextBox);
@@ -546,12 +574,130 @@ namespace mysql_phone_book
 			this.groupBox1.Controls.Add(call_numberLabel);
 			this.groupBox1.Controls.Add(debitLabel);
 			this.groupBox1.Controls.Add(this.debitTextBox);
-			this.groupBox1.Location = new System.Drawing.Point(10, 42);
+			this.groupBox1.Location = new System.Drawing.Point(9, 50);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(795, 376);
+			this.groupBox1.Size = new System.Drawing.Size(795, 373);
 			this.groupBox1.TabIndex = 24;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "groupBox1";
+			// 
+			// toolStripSeparator1
+			// 
+			this.toolStripSeparator1.Name = "toolStripSeparator1";
+			this.toolStripSeparator1.Size = new System.Drawing.Size(6, 39);
+			// 
+			// toolStripSeparator2
+			// 
+			this.toolStripSeparator2.Name = "toolStripSeparator2";
+			this.toolStripSeparator2.Size = new System.Drawing.Size(6, 39);
+			// 
+			// toolStripSeparator3
+			// 
+			this.toolStripSeparator3.Name = "toolStripSeparator3";
+			this.toolStripSeparator3.Size = new System.Drawing.Size(6, 39);
+			// 
+			// commentLabel1
+			// 
+			commentLabel1.AutoSize = true;
+			commentLabel1.Location = new System.Drawing.Point(216, 285);
+			commentLabel1.Name = "commentLabel1";
+			commentLabel1.Size = new System.Drawing.Size(62, 15);
+			commentLabel1.TabIndex = 23;
+			commentLabel1.Text = "comment:";
+			commentLabel1.Click += new System.EventHandler(this.commentLabel1_Click);
+			// 
+			// commentTextBox1
+			// 
+			this.commentTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cosutmer_listBindingSource, "comment", true));
+			this.commentTextBox1.Location = new System.Drawing.Point(297, 282);
+			this.commentTextBox1.Name = "commentTextBox1";
+			this.commentTextBox1.Size = new System.Drawing.Size(187, 21);
+			this.commentTextBox1.TabIndex = 24;
+			// 
+			// toolStrip1
+			// 
+			this.toolStrip1.AutoSize = false;
+			this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1,
+            this.toolStripSeparator4,
+            this.toolStripButton2,
+            this.toolStripSeparator5,
+            this.toolStripButton3,
+            this.toolStripSeparator6,
+            this.toolStripButton4,
+            this.toolStripSeparator7,
+            this.toolStripButton5,
+            this.toolStripSeparator8});
+			this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+			this.toolStrip1.Name = "toolStrip1";
+			this.toolStrip1.Size = new System.Drawing.Size(816, 47);
+			this.toolStrip1.TabIndex = 25;
+			this.toolStrip1.Text = "toolStrip1";
+			// 
+			// toolStripButton1
+			// 
+			this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+			this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButton1.Name = "toolStripButton1";
+			this.toolStripButton1.Size = new System.Drawing.Size(76, 44);
+			this.toolStripButton1.Text = "Add New";
+			// 
+			// toolStripSeparator4
+			// 
+			this.toolStripSeparator4.Name = "toolStripSeparator4";
+			this.toolStripSeparator4.Size = new System.Drawing.Size(6, 47);
+			// 
+			// toolStripButton2
+			// 
+			this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+			this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButton2.Name = "toolStripButton2";
+			this.toolStripButton2.Size = new System.Drawing.Size(47, 44);
+			this.toolStripButton2.Text = "Edit";
+			// 
+			// toolStripSeparator5
+			// 
+			this.toolStripSeparator5.Name = "toolStripSeparator5";
+			this.toolStripSeparator5.Size = new System.Drawing.Size(6, 47);
+			// 
+			// toolStripButton3
+			// 
+			this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+			this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButton3.Name = "toolStripButton3";
+			this.toolStripButton3.Size = new System.Drawing.Size(60, 44);
+			this.toolStripButton3.Text = "Delete";
+			// 
+			// toolStripSeparator6
+			// 
+			this.toolStripSeparator6.Name = "toolStripSeparator6";
+			this.toolStripSeparator6.Size = new System.Drawing.Size(6, 47);
+			// 
+			// toolStripButton4
+			// 
+			this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
+			this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButton4.Name = "toolStripButton4";
+			this.toolStripButton4.Size = new System.Drawing.Size(51, 44);
+			this.toolStripButton4.Text = "Save";
+			// 
+			// toolStripSeparator7
+			// 
+			this.toolStripSeparator7.Name = "toolStripSeparator7";
+			this.toolStripSeparator7.Size = new System.Drawing.Size(6, 47);
+			// 
+			// toolStripButton5
+			// 
+			this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
+			this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButton5.Name = "toolStripButton5";
+			this.toolStripButton5.Size = new System.Drawing.Size(63, 44);
+			this.toolStripButton5.Text = "Cancel";
+			// 
+			// toolStripSeparator8
+			// 
+			this.toolStripSeparator8.Name = "toolStripSeparator8";
+			this.toolStripSeparator8.Size = new System.Drawing.Size(6, 47);
 			// 
 			// Form1
 			// 
@@ -559,9 +705,10 @@ namespace mysql_phone_book
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.WhiteSmoke;
 			this.ClientSize = new System.Drawing.Size(816, 614);
-			this.Controls.Add(this.groupBox1);
-			this.Controls.Add(this.cosutmer_listDataGridView);
+			this.Controls.Add(this.toolStrip1);
 			this.Controls.Add(this.cosutmer_listBindingNavigator);
+			this.Controls.Add(this.cosutmer_listDataGridView);
+			this.Controls.Add(this.groupBox1);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.MaximizeBox = false;
@@ -578,8 +725,9 @@ namespace mysql_phone_book
 			((System.ComponentModel.ISupportInitialize)(this.phone_book_dataset)).EndInit();
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
+			this.toolStrip1.ResumeLayout(false);
+			this.toolStrip1.PerformLayout();
 			this.ResumeLayout(false);
-			this.PerformLayout();
 
 		}
 
@@ -626,6 +774,21 @@ namespace mysql_phone_book
 		private System.Windows.Forms.TextBox addresTextBox;
 		private System.Windows.Forms.TextBox commentTextBox;
 		private System.Windows.Forms.GroupBox groupBox1;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+		private System.Windows.Forms.TextBox commentTextBox1;
+		private System.Windows.Forms.ToolStrip toolStrip1;
+		private System.Windows.Forms.ToolStripButton toolStripButton1;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+		private System.Windows.Forms.ToolStripButton toolStripButton2;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+		private System.Windows.Forms.ToolStripButton toolStripButton3;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+		private System.Windows.Forms.ToolStripButton toolStripButton4;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
+		private System.Windows.Forms.ToolStripButton toolStripButton5;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
 	}
 }
 

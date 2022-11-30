@@ -30,5 +30,10 @@ namespace mysql_phone_book
 			this.cosutmer_listTableAdapter.Fill(this.phone_book_dataset.cosutmer_list);
 
 		}
+
+		private void commentLabel1_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
