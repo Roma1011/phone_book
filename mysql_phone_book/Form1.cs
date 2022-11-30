@@ -74,6 +74,9 @@ namespace mysql_phone_book
 		private void Add_new_butto_up_Click(object sender, EventArgs e)
 		{
 			new_edit_del_butt();
+			//---------------add new record-------------
+			this.cosutmer_listBindingSource.AddNew();
+			//------------------------------------------
 		}
 		private void Save_button_up_Click(object sender, EventArgs e)
 		{
@@ -92,6 +95,7 @@ namespace mysql_phone_book
 		private void Cancel_button_up_Click(object sender, EventArgs e)
 		{
 			save_cancel_butt();
+
 		}
 	}
 }
