@@ -28,10 +28,14 @@ namespace mysql_phone_book
 		{
 			// TODO: This line of code loads data into the 'phone_book_dataset.cosutmer_list' table. You can move, or remove it, as needed.
 			this.cosutmer_listTableAdapter.Fill(this.phone_book_dataset.cosutmer_list);
+			//---------------------------------------------------------
 			this.Save_button_up.Enabled = false;
 			this.Cancel_button_up.Enabled = false;
-
-
+			//---------------------------------------------------------
+			this.cosutmer_listDataGridView.Enabled = true;
+			this.groupBox1.Enabled = false;
+			//---------------------------------------------------------
+			this.cosutmer_listBindingNavigator.Enabled = true;
 		}
 
 		private void commentLabel1_Click(object sender, EventArgs e)
@@ -47,6 +51,10 @@ namespace mysql_phone_book
 			this.Save_button_up.Enabled = true;
 			this.Cancel_button_up.Enabled = true;
 			//-----------------------------------
+			this.cosutmer_listDataGridView.Enabled = false;
+			this.groupBox1.Enabled = true;
+			//----------------------------------
+			this.cosutmer_listBindingNavigator.Enabled = false;
 		}
 		private void save_cancel_butt()
 		{
@@ -57,6 +65,11 @@ namespace mysql_phone_book
 			this.Add_new_butto_up.Enabled = true;
 			this.Edit_button_up.Enabled = true;
 			this.Delete_button_up.Enabled = true;
+			//-----------------------------------
+			this.cosutmer_listDataGridView.Enabled = true;
+			this.groupBox1.Enabled = false;
+			//-----------------------------------
+			this.cosutmer_listBindingNavigator.Enabled = true;
 		}
 		private void Add_new_butto_up_Click(object sender, EventArgs e)
 		{
