@@ -93,11 +93,26 @@ namespace mysql_phone_book
 		}
 		private void Edit_button_up_Click(object sender, EventArgs e)
 		{
+			//---------------------------
+			Int32 rc=this.phone_book_dataset.cosutmer_list.Rows.Count;
+			if(rc==0)
+			{
+				MessageBox.Show("Please selct your record to edit!");
+				return;
+			}
+			//---------------------------
 			new_edit_del_butt();
 		}
 
 		private void Delete_button_up_Click(object sender, EventArgs e)
 		{
+			//--------------empty row checker--------------------
+			Int32 rc = this.phone_book_dataset.cosutmer_list.Rows.Count;
+			if (rc == 0)
+			{
+				MessageBox.Show("Please selct your record to delete!");
+				return;
+			}
 			new_edit_del_butt();
 			//----------------delete record---------------
 			this.cosutmer_listBindingSource.RemoveCurrent();
