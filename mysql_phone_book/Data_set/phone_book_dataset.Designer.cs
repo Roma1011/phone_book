@@ -1324,11 +1324,9 @@ namespace mysql_phone_book.Data_set.phone_book_datasetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(param);
             this._adapter.InsertCommand = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO cosutmer_list
-                         (first_name, last_name, age, debit, call_number, land_line, email, addres, comment, date_of_birth)
-VALUES        (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
-                             SELECT        last_insert_id() AS 'id'
-                              FROM            cosutmer_list;";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO `cosutmer_list` (`first_name`, `last_name`, `age`, `debit`, `call_num" +
+                "ber`, `land_line`, `email`, `addres`, `comment`) VALUES (@p1, @p2, @p3, @p4, @p5" +
+                ", @p6, @p7, @p8, @p9)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p1";
@@ -1400,14 +1398,6 @@ VALUES        (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
             param.SourceColumn = "comment";
-            param.SourceVersion = global::System.Data.DataRowVersion.Current;
-            this._adapter.InsertCommand.Parameters.Add(param);
-            param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p10";
-            param.DbType = global::System.Data.DbType.Date;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Date;
-            param.IsNullable = true;
-            param.SourceColumn = "date_of_birth";
             param.SourceVersion = global::System.Data.DataRowVersion.Current;
             this._adapter.InsertCommand.Parameters.Add(param);
             this._adapter.UpdateCommand = new global::MySql.Data.MySqlClient.MySqlCommand();
@@ -1662,8 +1652,8 @@ VALUES        (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
             this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[1];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT id, first_name, last_name, age, debit, call_number, land_line, email, addr" +
-                "es, comment FROM cosutmer_list";
+            this._commandCollection[0].CommandText = "SELECT        id, first_name, last_name, age, debit, call_number, land_line, emai" +
+                "l, addres, comment\r\nFROM            cosutmer_list";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1807,7 +1797,7 @@ VALUES        (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string p1, string p2, global::System.Nullable<short> p3, global::System.Nullable<decimal> p4, string p5, string p6, string p7, string p8, string p9, global::System.Nullable<global::System.DateTime> p10) {
+        public virtual int Insert(string p1, string p2, global::System.Nullable<short> p3, global::System.Nullable<decimal> p4, string p5, string p6, string p7, string p8, string p9) {
             if ((p1 == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -1861,12 +1851,6 @@ VALUES        (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
             }
             else {
                 this.Adapter.InsertCommand.Parameters[8].Value = ((string)(p9));
-            }
-            if ((p10.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[9].Value = ((System.DateTime)(p10.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 

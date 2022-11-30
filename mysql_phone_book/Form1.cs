@@ -15,15 +15,6 @@ namespace mysql_phone_book
 		{
 			InitializeComponent();
 		}
-
-		private void cosutmer_listBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-		{
-			this.Validate();
-			this.cosutmer_listBindingSource.EndEdit();
-			this.tableAdapterManager.UpdateAll(this.phone_book_dataset);
-
-		}
-
 		private void Form1_Load(object sender, EventArgs e)
 		{
 			// TODO: This line of code loads data into the 'phone_book_dataset.cosutmer_list' table. You can move, or remove it, as needed.
@@ -35,7 +26,6 @@ namespace mysql_phone_book
 			this.cosutmer_listDataGridView.Enabled = true;
 			this.groupBox1.Enabled = false;
 			//---------------------------------------------------------
-			this.cosutmer_listBindingNavigator.Enabled = true;
 		}
 
 		private void commentLabel1_Click(object sender, EventArgs e)
@@ -61,7 +51,6 @@ namespace mysql_phone_book
 					this.groupBox1.Enabled = true;
 				}
 			//----------------------------------
-			this.cosutmer_listBindingNavigator.Enabled = false;
 		}
 		private void save_cancel_butt()
 		{
@@ -76,7 +65,6 @@ namespace mysql_phone_book
 			this.cosutmer_listDataGridView.Enabled = true;
 			this.groupBox1.Enabled = false;
 			//-----------------------------------
-			this.cosutmer_listBindingNavigator.Enabled = true;
 		}
 		private void Add_new_butto_up_Click(object sender, EventArgs e)
 		{
@@ -133,6 +121,10 @@ namespace mysql_phone_book
 			this.phone_book_dataset.cosutmer_list.RejectChanges();
 			this.cosutmer_listBindingSource.CancelEdit();
 			//-----------------------------------
+		}
+
+		private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+		{
 		}
 	}
 }
