@@ -227,6 +227,8 @@ namespace mysql_phone_book
 			// 
 			this.cosutmer_listDataGridView.AllowUserToAddRows = false;
 			this.cosutmer_listDataGridView.AllowUserToDeleteRows = false;
+			this.cosutmer_listDataGridView.AllowUserToResizeColumns = false;
+			this.cosutmer_listDataGridView.AllowUserToResizeRows = false;
 			this.cosutmer_listDataGridView.AutoGenerateColumns = false;
 			this.cosutmer_listDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.cosutmer_listDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -369,7 +371,7 @@ namespace mysql_phone_book
 			this.groupBox1.Size = new System.Drawing.Size(795, 373);
 			this.groupBox1.TabIndex = 24;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "groupBox1";
+			this.groupBox1.Text = "Register and edited window";
 			// 
 			// commentTextBox1
 			// 
@@ -677,7 +679,7 @@ namespace mysql_phone_book
 			this.Name = "Form1";
 			this.ShowIcon = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Form1";
+			this.Text = "Phone Book";
 			this.Load += new System.EventHandler(this.Form1_Load);
 			((System.ComponentModel.ISupportInitialize)(this.cosutmer_listDataGridView)).EndInit();
 			this.groupBox1.ResumeLayout(false);
