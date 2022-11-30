@@ -42,7 +42,7 @@ namespace mysql_phone_book
 		{
 
 		}
-		private void new_edit_del_butt()
+		private void new_edit_del_butt(string but_name)
 		{
 			this.Add_new_butto_up.Enabled = false;
 			this.Edit_button_up.Enabled = false;
@@ -52,7 +52,14 @@ namespace mysql_phone_book
 			this.Cancel_button_up.Enabled = true;
 			//-----------------------------------
 			this.cosutmer_listDataGridView.Enabled = false;
-			this.groupBox1.Enabled = true;
+				if(but_name== "del_butt")
+				{
+					this.groupBox1.Enabled = false;
+				}
+				else
+				{
+					this.groupBox1.Enabled = true;
+				}
 			//----------------------------------
 			this.cosutmer_listBindingNavigator.Enabled = false;
 		}
@@ -73,7 +80,7 @@ namespace mysql_phone_book
 		}
 		private void Add_new_butto_up_Click(object sender, EventArgs e)
 		{
-			new_edit_del_butt();
+			new_edit_del_butt("new_butt");
 			//---------------add new record-------------
 			this.cosutmer_listBindingSource.AddNew();
 			//------------------------------------------
@@ -101,7 +108,7 @@ namespace mysql_phone_book
 				return;
 			}
 			//---------------------------
-			new_edit_del_butt();
+			new_edit_del_butt("edit_butt");
 		}
 
 		private void Delete_button_up_Click(object sender, EventArgs e)
@@ -113,7 +120,7 @@ namespace mysql_phone_book
 				MessageBox.Show("Please selct your record to delete!");
 				return;
 			}
-			new_edit_del_butt();
+			new_edit_del_butt("del_butt");
 			//----------------delete record---------------
 			this.cosutmer_listBindingSource.RemoveCurrent();
 			//--------------------------------------------
