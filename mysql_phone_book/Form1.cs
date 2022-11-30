@@ -38,8 +38,7 @@ namespace mysql_phone_book
 		{
 
 		}
-
-		private void Add_new_butto_up_Click(object sender, EventArgs e)
+		private void new_edit_del_butt()
 		{
 			this.Add_new_butto_up.Enabled = false;
 			this.Edit_button_up.Enabled = false;
@@ -49,8 +48,7 @@ namespace mysql_phone_book
 			this.Cancel_button_up.Enabled = true;
 			//-----------------------------------
 		}
-
-		private void Save_button_up_Click(object sender, EventArgs e)
+		private void save_cancel_butt()
 		{
 			//-----------------------------------
 			this.Save_button_up.Enabled = false;
@@ -59,6 +57,28 @@ namespace mysql_phone_book
 			this.Add_new_butto_up.Enabled = true;
 			this.Edit_button_up.Enabled = true;
 			this.Delete_button_up.Enabled = true;
+		}
+		private void Add_new_butto_up_Click(object sender, EventArgs e)
+		{
+			new_edit_del_butt();
+		}
+		private void Save_button_up_Click(object sender, EventArgs e)
+		{
+			save_cancel_butt();
+		}
+		private void Edit_button_up_Click(object sender, EventArgs e)
+		{
+			new_edit_del_butt();
+		}
+
+		private void Delete_button_up_Click(object sender, EventArgs e)
+		{
+			new_edit_del_butt();
+		}
+
+		private void Cancel_button_up_Click(object sender, EventArgs e)
+		{
+			save_cancel_butt();
 		}
 	}
 }

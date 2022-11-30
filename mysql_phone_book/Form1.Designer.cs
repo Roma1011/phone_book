@@ -655,6 +655,7 @@ namespace mysql_phone_book
 			this.Edit_button_up.Name = "Edit_button_up";
 			this.Edit_button_up.Size = new System.Drawing.Size(47, 44);
 			this.Edit_button_up.Text = "Edit";
+			this.Edit_button_up.Click += new System.EventHandler(this.Edit_button_up_Click);
 			// 
 			// toolStripSeparator5
 			// 
@@ -668,6 +669,7 @@ namespace mysql_phone_book
 			this.Delete_button_up.Name = "Delete_button_up";
 			this.Delete_button_up.Size = new System.Drawing.Size(60, 44);
 			this.Delete_button_up.Text = "Delete";
+			this.Delete_button_up.Click += new System.EventHandler(this.Delete_button_up_Click);
 			// 
 			// toolStripSeparator6
 			// 
@@ -697,6 +699,7 @@ namespace mysql_phone_book
 			this.Cancel_button_up.Name = "Cancel_button_up";
 			this.Cancel_button_up.Size = new System.Drawing.Size(63, 44);
 			this.Cancel_button_up.Text = "Cancel";
+			this.Cancel_button_up.Click += new System.EventHandler(this.Cancel_button_up_Click);
 			// 
 			// toolStripSeparator8
 			// 
